@@ -21,9 +21,9 @@ export const NavBar = () => {
           </div>
 
         <div className="hidden md:flex items-center space-x-6 sm:space-x-8 ">
-          <a href="#features" className="text-gray-300 hover:text-white text-sm md:text-xl">Features</a>
-          <a href="#pricings" className="text-gray-300 hover:text-white text-sm md:text-xl">Pricings</a>
-          <a href="#testimonials" className="text-gray-300 hover:text-white text-sm md:text-xl">Testimonials</a>
+          <a href="#features" className="text-gray-300 hover:text-white text-sm lg:text-balg">Features</a>
+          <a href="#pricings" className="text-gray-300 hover:text-white text-sm lg:text-base">Pricings</a>
+          <a href="#testimonials" className="text-gray-300 hover:text-white text-sm lg:text-base">Testimonials</a>
         </div>
 
         <button 
@@ -37,11 +37,19 @@ export const NavBar = () => {
       </div>
 
       {mobileMenuIsOpen && 
-        <div className="md:hidden bg-slate-900/95 backdrop-blur-lg border-t border-slate-800">
+        <div className="md:hidden bg-slate-900/95 backdrop-blur-lg border-t border-slate-800 animate-in slide-in-from-top duration-300">
           <div className="flex flex-col items-center justify-center gap-2 pt-3 pb-3">
-          <a href="#features" className="text-gray-300 hover:text-white text-sm md:text-xl">Features</a>
-          <a href="#pricings" className="text-gray-300 hover:text-white text-sm md:text-xl">Pricings</a>
-          <a href="#testimonials" className="text-gray-300 hover:text-white text-sm md:text-xl">Testimonials</a>
+          <a href="#features" className="text-gray-300 hover:text-white text-sm lg:text-base"
+          onClick={()=> setMobileMenuIsOpen(false)}
+          >Features</a>
+
+          <a href="#pricings" className="text-gray-300 hover:text-white text-sm lg:text-base"
+          onClick={()=> setMobileMenuIsOpen(false)}
+          >Pricings</a>
+
+          <a href="#testimonials" className="text-gray-300 hover:text-white text-sm lg:text-base"
+          onClick={()=> setMobileMenuIsOpen(false)}
+          >Testimonials</a>
           </div>
         </div>
       }
