@@ -13,7 +13,7 @@ export const Hero = () => {
 
         function handleMouseMove(e: MouseEvent) {
             setMousePosition({ x: e.clientX, y: e.clientY });
-            console.log(e.clientX, e.clientY)
+            
 
         }
 

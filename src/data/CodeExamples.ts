@@ -261,3 +261,24 @@ export const testimonials : Testimonials[] = [
       "Our development velocity increased by 300% since adopting this platform. It's like having a senior developer pair programming with every team member.",
   },
 ];
+
+
+interface FooterLinks {
+  Product : string[],
+  Company : string[],
+  Resources : string[],
+  Legal : string[],
+}
+
+export const footerLinks : FooterLinks = {
+  Product: ["Features", "Pricing", "Security", "Roadmap", "Changelog"],
+  Company: ["About", "Blog", "Careers", "Press", "Partners"],
+  Resources: [
+    "Documentation",
+    "Help Center",
+    "Community",
+    "API Reference",
+    "Status",
+  ],
+  Legal: ["Privacy", "Terms", "Cookie Policy", "Licenses", "Compliance"],
+};
