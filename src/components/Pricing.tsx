@@ -31,6 +31,8 @@ export const Pricing = () => {
                             className={`relative bg-slate-900/50 backdrop-blur-sm border rounded-xl sm:rounded-2xl p-6 sm:p-8 transition-all duration-300 overflow-visiable group flex flex-col h-full
                                 ${plan.mostPopular ? "border-blue-500 shadow-2xl shadow-blue-500/20 lg:scale-105" : "border-slate-800 hover:border-slate-700"}`}
                             >
+                                <div className="absolute inset-0 bg-linear-to-br from-white/10 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 transform -translate-x-full -translate-y-full group-hover:translate-x-0 group-hover:translate-y-0 pointer-events-none rounded-lg" />
+
                                 {plan.mostPopular && (
                                     <div className="absolute left-1/2 transform -translate-x-1/2  -top-2 sm:-top-3 z-10">
                                         <div className="flex items-center justify-center space-x-1 px-3 sm:px-4 py-1 sm:py-1.5 bg-linear-to-b from-blue-500 to-cyan-500 rounded-full text-xs sm:text-sm shadow-lg font-semibold">
@@ -63,8 +65,8 @@ export const Pricing = () => {
                                         <li key={featurekey}
                                         className="flex items-start space-x-2 sm:space-x-3"
                                         >
-                                            <div className="shrink-0 w-4 h-4 sm:w-5 sm:h-5 flex items-center justify-center mt-0.5 bg-blue-500/20 rounded-full">
-                                                <Check className="w-2.5 h-2.5 sm:w-3 sm:h-3 text-blue-400"/>
+                                            <div className="shrink-0 w-3 h-3 sm:w-4 sm:h-4 flex items-center justify-center mt-0.5 bg-blue-500/20 rounded-full">
+                                                <Check className="w-2 h-2 sm:w-3 sm:h-3 text-blue-400"/>
                                             </div>
                                             <span className="text-gray-300 text-xs sm:text-sm">
                                                 {feature}
